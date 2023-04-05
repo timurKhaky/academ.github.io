@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Academ-city</title>
+  </head>
+  <body>
+    <div id="root">
+      <div class="wrapper_description">
+        <div class="description">
+          <div class="description_main">
+            <div class="description_header">
+              <h1 class="description_title">
+                Мы делаем обучение еще выгоднее для вас!
+              </h1>
+              <div class="desktop description_discount">Скидка <b>-43%</b></div>
+              <div class="mobile description_discount">-43%</div>
+            </div>
+            <div class="description_about_price">
+              <div class="description_text">
+                Зафиксируйте <b>скидку</b> <br />
+                на все обучения!
+              </div>
+              <div class="description_prices">
+                <div class="old_price">
+                  <s>46 000</s>
+                  <span>/за семестр</span>
+                </div>
+                <div class="new_price">26 900₽</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="offer_features_main">
+          <div class="features_list">
+            <span>
+              <img src="./checkmark.svg" alt="галочка" />Возможность получить
+              налоговый вычет — 13%</span
+            >
+            <span>
+              <img src="./checkmark.svg" alt="галочка" />Кредит на обучение с
+              господдержкой</span
+            >
+          </div>
+        </div>
+        <div class="footer_main">
+          <p>
+            По всем вопросам <b> 8 (700) 989 99 99 </b> по будням с 9 до 17 по
+            МСК.
+            <span class="desktop">Бесплатно по России</span>
+          </p>
+          <span class="mobile"> Бесплатно по России</span>
+        </div>
+        <div class="registration tablet mobile" id="reg_mobile">
+          <div class="registration_header">
+            Проконсультируйтесь со специалистом:
+          </div>
+          <div class="registration_inputs_group"></div>
+          <input
+            type="text"
+            class="inp_standart"
+            name="fullName"
+            placeholder="Ф.И.О *"
+          />
+          <input
+            type="text"
+            class="inp_standart"
+            name="phoneNumber"
+            placeholder="Телефон *"
+          />
+          <input
+            type="email"
+            class="inp_standart"
+            name="email"
+            placeholder="E-mail *"
+          />
+          <div class="registration_agreement_accept">
+            <div>
+              <input type="checkbox" />
+              <span>Согласен на обработку персональных данных</span>
+              <span class="required_point">*</span>
+            </div>
+          </div>
+
+          <div class="registration_hints">
+            <span class="required_point">*</span>Поля, обязательные для
+            заполнения
+          </div>
+          <div class="registration_btn_accept">
+            <button class="btn_standart">Получить консультацию</button>
+          </div>
+        </div>
+        <div class="mobile slider">
+          <button class="btn_arrow" onclick="changePage('minus')">˂</button>
+          <div class="page" id="page">
+            <span id="currentPage">1</span>/<span id="totalPage">3</span>
+          </div>
+          <button class="btn_arrow" onclick="changePage('plus')">></button>
+        </div>
+      </div>
+      <div class="registration desktop_only" id="reg_desktop">
+        <div class="registration_header">
+          Проконсультируйтесь со специалистом:
+        </div>
+        <div class="registration_inputs_group"></div>
+        <input
+          type="text"
+          class="inp_standart"
+          name="fullName"
+          placeholder="Ф.И.О *"
+        />
+        <input
+          type="text"
+          class="inp_standart"
+          name="phoneNumber"
+          placeholder="Телефон *"
+        />
+        <input
+          type="email"
+          class="inp_standart"
+          name="email"
+          placeholder="E-mail *"
+        />
+        <div class="registration_agreement_accept">
+          <div>
+            <input type="checkbox" />
+            <span>Согласен на обработку персональных данных</span>
+            <span class="required_point">*</span>
+          </div>
+        </div>
+        <div class="registration_hints">
+          <span class="required_point">*</span>Поля, обязательные для заполнения
+        </div>
+        <div class="registration_btn_accept">
+          <button class="btn_standart">Получить консультацию</button>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
